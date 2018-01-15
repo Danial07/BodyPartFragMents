@@ -52,6 +52,11 @@ public class ImageAssets {
         add(R.drawable.legs11);
         add(R.drawable.legs12);
     }};
+    private static List<Integer> AllBODyPArtS = new ArrayList<Integer>(){{
+        addAll(Heads);
+        addAll(body);
+        addAll(legs);
+    }};
     public static List<Integer> getHeads(){
         // Returning a fUll list of Heads
         return Heads;
@@ -87,5 +92,13 @@ public class ImageAssets {
     public static void setLegAtPOsition(int Legs, int pOsition){
         //  Setting Legs at Specific pOStion
         legs.set(pOsition, Legs);
+    }
+    public static List<Integer> getAllBODyPArtS(){
+        // Returning a fUll list of All BODy pArtS
+        return AllBODyPArtS;
+    }
+    public static void setAllBODyPArtS(List<Integer> AllboDyPArtS){
+        //  Setting All BODy PArtS
+        AllBODyPArtS = AllboDyPArtS;
     }
 }
